@@ -1,0 +1,10 @@
+.items-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item{
+    flex-basis: 26%;
+    padding: 30px;
+}
