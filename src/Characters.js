@@ -9,8 +9,8 @@ export const characters = [
         age: 37,
         height: `5'9''`,
         description: 'Man standing with sword',
-        Strength: 'Can take a beating',
-        Weakness: 'Interacting with people',
+        strength: 'Can take a beating',
+        weakness: 'Interacting with people',
         price: 8,
         img: 'paladin.jpeg'
     },
@@ -24,8 +24,8 @@ export const characters = [
         age: 18,
         height: `5'4''`,
         description: 'Woman standing with dagger',
-        Strength: 'Very Strong',
-        Weakness: 'Not very wise',
+        strength: 'Very Strong',
+        weakness: 'Not very wise',
         price: 5,
         img: 'rogue.jpg'
     },
@@ -39,8 +39,8 @@ export const characters = [
         age: 56,
         height: `5'10''`,
         description: 'Old Man creating fireball',
-        Strength: 'Extremely wise',
-        Weakness: 'Very weak',
+        strength: 'Extremely wise',
+        weakness: 'Very weak',
         price: 14,
         img: 'sorcerer.jpeg'
     },
@@ -54,8 +54,8 @@ export const characters = [
         age: 67,
         height: `6'3''`,
         description: 'Old man in suit of armor',
-        Strength: 'A born leader',
-        Weakness: 'Not as fast as he once was',
+        strength: 'A born leader',
+        weakness: 'Not as fast as he once was',
         price: 10,
         img: 'fighter.jpeg'
     },
@@ -69,8 +69,8 @@ export const characters = [
         age: 371,
         height: `5'3''`,
         description: 'Woman drawing her bow',
-        Strength: 'Very perceptive',
-        Weakness: 'Quick to anger',
+        strength: 'Very perceptive',
+        weakness: 'Quick to anger',
         price: 9,
         img: 'ranger.jpeg'
     },
@@ -84,9 +84,9 @@ export const characters = [
         age: 43,
         height: `6'1''`,
         description: 'Dragon zapping their sword',
-        Strength: 'Highly intellectual',
-        Weakness: 'Not very charismatic',
-        price: 9,
+        strength: 'Highly intellectual',
+        weakness: 'Not very charismatic',
+        price: 11,
         img: 'warlock.jpeg'
     }
 ]

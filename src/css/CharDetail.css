@@ -1,29 +1,24 @@
-.item-container{
+.details-item-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
-
-
-.character-img{
-    width: 200px;
+.details-character-img{
+    width: 300px;
     height: 300px;
     object-fit: cover;
+    object-position: 0 0;
 } 
 
-.item-info{
+.details-item-info{
     background-color: rgba(255, 255, 255, 0.5);
     width: 200px;
-    height: 100px;
-    margin-top: -5px;
-    padding-bottom: 10px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
 }
 
-.add-to-cart{
-    align-self: center;
-}

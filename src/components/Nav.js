@@ -3,20 +3,19 @@ import { Link } from "react-router-dom";
 import "../css/Nav.css"
 
 const Nav = (props) => {
-
   const navStyle = {
     textDecoration: 'none',
     color: 'white'
   }
 
-  let cartTotal = 0
+  // let cartTotal = 0
 
-  for (let i = 0; i < props.cart.length; i++){
-    console.log(props.cart[i])
-    cartTotal += parseInt(props.cart[i].qty)
-    
-  }
+  
 
+  // for (let i = 0; i < props.cart.length; i++){
+  //       cartTotal += parseInt(props.cart[i].qty)
+        
+  //     }
 
   return (
     <nav>
@@ -31,7 +30,7 @@ const Nav = (props) => {
           <li>Shop</li>
         </Link>
         <Link style={navStyle} to="/cart">
-          <li>Cart ({cartTotal})</li>
+          <li>Cart ({props.cartItemsQty})</li>
         </Link>
       </ul>
     </nav>
