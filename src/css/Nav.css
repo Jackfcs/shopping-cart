@@ -1,17 +1,56 @@
 nav {
-    background-color: rgba(63, 87, 87, 0.9);
+    background-color: rgba(127, 160, 161, 0.9);
     display: flex;
     justify-content: space-around;
+    height: 10vh;
+    color: rgb(0, 0, 0);
     align-items: center;
-    min-height: 10vh;
-    color: white;
+    font-weight: bold;
+    font-size: larger;
 
 }
 
-.nav-links {
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.list {
     list-style: none;
 }
+
+.page-names {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    align-self: left;
+    background-color: white;
+}
+
+.home{
+    width: 25vw;
+}
+
+.shop{
+    width: 25vw;
+}
+
+.cart{
+    width: 25vw;
+}
+
+.cart-icon{
+    font-size: 40px;
+    position: relative;
+    top: 11px;
+}
+
+.cart-number{
+    position: relative;
+    color: black;
+    bottom: 24px;
+    left: 5px;
+}
+
+

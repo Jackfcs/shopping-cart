@@ -1,17 +1,42 @@
+.cart-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
 .cart-container{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    width: 60%;
+    background: rgba(127, 160, 161, 0.7);
+    margin: 10px;    
+    height: 85vh;
+    overflow: auto;
+}
+
+.order-summary-container{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    margin: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
 .cart-item-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
     flex-shrink: 0;
+}
+
+.your-cart{
+    position: relative;
+    top: 26px;
+    margin-bottom: 50px;
 }
 
 .cart-character-img{
@@ -21,13 +46,19 @@
     object-position: 0 0;
 } 
 
+.amend-days{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
 
 
 .cart-character-info-container{
     width: 200px;
     height: 200px;
     background-color: rgba(255, 255, 255, 0.5);
-    
 }
 
 .cart-character-info{
@@ -41,4 +72,71 @@
 
 .delete-item{
     align-self: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete-item:hover {
+    cursor: pointer;
+}
+
+.delete-item:active{
+    background-color: grey;
+}
+
+.cart-header{
+    border-bottom: solid black 1px;
+    padding-bottom: 15px;
+    width: 90%;
+    align-self: center;
+    font-weight: bold;
+    font-size: larger;
+    
+}
+
+.empty-cart{
+    font-weight: bold;
+}
+
+.add-npc{
+    font-weight: 100;
+}
+
+.num-of-items{
+
+}
+
+.total-cost{
+
+}
+
+.checkout-button{
+    width: 30%;
+    align-self: center;
+    padding: 5px;
+    border: none;
+    background-color: rgb(243, 185, 78);
+}
+
+.checkout-button:hover {
+    cursor: pointer;
+}
+
+.num-of-days{
+    width: 200px;
+    
+}
+
+.amend-qty-btn{
+    position: relative;
+    bottom: 2px;
+    border: none;
+}
+
+.amend-qty-btn:hover {
+    cursor: pointer;
+}
+
+.amend-qty-btn:active {
+    background-color: grey;
 }

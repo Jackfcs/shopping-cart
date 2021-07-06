@@ -26,4 +26,15 @@
 
 .add-to-cart{
     align-self: center;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.add-to-cart:hover{
+    cursor: pointer;
+}
+
+.add-to-cart:active{
+    background-color: rgb(179, 179, 179);
 }

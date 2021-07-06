@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../css/Nav.css"
+import "../css/Nav.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
 
 const Nav = (props) => {
   const navStyle = {
@@ -19,19 +22,22 @@ const Nav = (props) => {
 
   return (
     <nav>
-      <ul className="nav-links">
+      <ul className="list">
+        <div className="page-names">
         <Link style={navStyle} to="/">
-          <h3>Logo</h3>
+          <img className="logo" src="/images/full-logo.png" alt="Logo"></img>
         </Link>
+        
         <Link style={navStyle} to="/">
-          <li>Home</li>
+          <li className="home">Home</li>
         </Link>
         <Link style={navStyle} to="/shop">
-          <li>Shop</li>
+          <li className="shop">Shop</li>
         </Link>
         <Link style={navStyle} to="/cart">
-          <li>Cart ({props.cartItemsQty})</li>
+          <li className="cart"><FontAwesomeIcon className="cart-icon" icon={faShoppingCart} /> <div className="cart-number">{props.cartItemsQty}</div></li>
         </Link>
+        </div>
       </ul>
     </nav>
   );

@@ -16,16 +16,18 @@ const CharDetail = (props) => {
                 className='details-character-img'
             ></img>
         </div>
-        <div className="details-item-info">
-            <div>Name: {char.name}</div>
-            <div>Class: {char.class}</div>
-            <div>Price: {char.price} GP per day</div>
-            <div>Age: {char.age}</div>
-            <div>Gender: {char.gender}</div>
-            <div>Height: {char.height}</div>
-            <div>Strength: {char.strength}</div>
-            <div>Weakness: {char.weakness}</div>
-            
+        <div className="text-container">
+          <div className="details-item-info">
+              <div>Name: {char.name}</div>
+              <div>Class: {char.class}</div>
+              <div>Price: {char.price} GP per day</div>
+              <div>Age: {char.age}</div>
+              <div>Gender: {char.gender}</div>
+              <div>Height: {char.height}</div>
+              <div>Strength: {char.strength}</div>
+              <div>Weakness: {char.weakness}</div>
+              
+          </div>
         </div>
       </div>
     );
