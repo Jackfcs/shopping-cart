@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/Cart.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = (props) => {
   const cart = props.cart;
@@ -58,9 +60,9 @@ const Cart = (props) => {
               <div className="amend-days">
                 <div style={{fontWeight: "bold"}}>Duration:</div> 
                 <div className="button-width">
-                  <button className="amend-qty-btn" onClick={() => decreaseQty(index)}>-</button> 
+                  <button className="amend-qty-btn" onClick={() => decreaseQty(index)}><FontAwesomeIcon className="fa fa-minus" icon={faMinus} /></button> 
                   <div className="num-of-days">{item.qty}{" "}{days}</div> 
-                  <button className="amend-qty-btn" onClick={() => increaseQty(index)}>+</button>
+                  <button className="amend-qty-btn" onClick={() => increaseQty(index)}><FontAwesomeIcon className="fa fa-plus" icon={faPlus} /></button>
                 </div>
               </div>
               <div><span style={{fontWeight: "bold"}}>Total:</span> {total} GP</div>

@@ -7,6 +7,7 @@ import CharDetail from "./components/CharDetail";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React, { useState } from "react";
 import { characters as chars } from "./Characters";
+import paladin from './images/paladin.jpeg';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -59,6 +60,7 @@ function App() {
     <Router>
       <div className="App">
         <Nav
+          className="nav"
           cart={cart}
           cartItemsQty={cartItemsQty}
         />

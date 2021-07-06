@@ -18,13 +18,15 @@ body{
 .App {
     text-align: center;
     margin: 0px;
+    height: 95vh;
     
 }
 
 .content{
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
+
 
 
 

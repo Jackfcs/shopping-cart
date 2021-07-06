@@ -23,7 +23,6 @@ export const characters = [
         weakness: 'Interacting with people',
         price: 8,
         img: paladin
-        //img: 'paladin.jpeg'
     },
     {
         id: 2,
