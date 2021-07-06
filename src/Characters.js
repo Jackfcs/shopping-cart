@@ -1,3 +1,13 @@
+import paladin from './images/paladin.jpeg'
+import rogue from './images/rogue.jpg'
+import sorcerer from './images/sorcerer.jpeg'
+import fighter from './images/fighter.jpeg'
+import ranger from './images/ranger.jpeg'
+import warlock from './images/warlock.jpeg'
+
+
+
+
 export const characters = [
     {
         id: 1,
@@ -12,7 +22,8 @@ export const characters = [
         strength: 'Can take a beating',
         weakness: 'Interacting with people',
         price: 8,
-        img: 'paladin.jpeg'
+        img: paladin
+        //img: 'paladin.jpeg'
     },
     {
         id: 2,
@@ -27,7 +38,7 @@ export const characters = [
         strength: 'Very Strong',
         weakness: 'Not very wise',
         price: 5,
-        img: 'rogue.jpg'
+        img: rogue
     },
     {
         id: 3,
@@ -42,7 +53,7 @@ export const characters = [
         strength: 'Extremely wise',
         weakness: 'Very weak',
         price: 14,
-        img: 'sorcerer.jpeg'
+        img: sorcerer
     },
     {
         id: 4,
@@ -57,7 +68,7 @@ export const characters = [
         strength: 'A born leader',
         weakness: 'Not as fast as he once was',
         price: 10,
-        img: 'fighter.jpeg'
+        img: fighter
     },
     {
         id: 5,
@@ -72,7 +83,7 @@ export const characters = [
         strength: 'Very perceptive',
         weakness: 'Quick to anger',
         price: 9,
-        img: 'ranger.jpeg'
+        img: ranger
     },
     {
         id: 6,
@@ -87,6 +98,6 @@ export const characters = [
         strength: 'Highly intellectual',
         weakness: 'Not very charismatic',
         price: 11,
-        img: 'warlock.jpeg'
+        img: warlock
     }
 ]

@@ -13,7 +13,7 @@ const CharDetail = (props) => {
       <div className="details-item-container">
           <div className='img-container'>
             <img alt={char.description}
-                src={`/images/${char.img}`}                
+                src={char.img}              
                 className='details-character-img'
             ></img>
         </div>

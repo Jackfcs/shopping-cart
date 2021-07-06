@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Nav.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import logo from "../images/logo.png"
 
 
 const Nav = (props) => {
@@ -18,7 +19,7 @@ const Nav = (props) => {
         <div className="page-names">
         <Link style={navStyle} to="/">
           <div className="logo-text">
-          <img className="logo" src="../images/logo.png" alt="Logo"></img><span>NPC4HIRE</span>
+          <img className="logo" src={logo} alt="Logo"></img><span>NPC4HIRE</span>
           </div>
         </Link>
         

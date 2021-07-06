@@ -9,7 +9,7 @@ const Cart = (props) => {
   const decreaseQty = props.decreaseQty;
 
 
-  
+
   let itemTotal = 0;
 
   cart.forEach(function (obj) {
@@ -47,7 +47,7 @@ const Cart = (props) => {
         <div className="cart-item-container" key={item.id}>
           <img
             alt={item.description}
-            src={`./images/${item.img}`}
+            src={item.img}
             className="cart-character-img"
           ></img>
           <div className="cart-character-info-container">

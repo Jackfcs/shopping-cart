@@ -14,7 +14,7 @@ const ShopItem = (props) => {
           <Link  to={`/shop/${char.id}`}>
             <img 
                 alt={char.description}
-                src={`/images/${char.img}`}
+                src={char.img}
                 className='character-img'
             ></img></Link>
         </div>
