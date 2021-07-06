@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import '../css/CharDetail.css';
 
@@ -18,18 +19,19 @@ const CharDetail = (props) => {
         </div>
         <div className="text-container">
           <div className="details-item-info">
-              <div>Name: {char.name}</div>
-              <div>Class: {char.class}</div>
-              <div>Price: {char.price} GP per day</div>
-              <div>Age: {char.age}</div>
-              <div>Gender: {char.gender}</div>
-              <div>Height: {char.height}</div>
-              <div>Strength: {char.strength}</div>
-              <div>Weakness: {char.weakness}</div>
-              
+              <div><span style={{fontWeight: "bold"}}>Name:</span> {char.name}</div>
+              <div><span style={{fontWeight: "bold"}}>Class:</span> {char.class}</div>
+              <div><span style={{fontWeight: "bold"}}>Price:</span> {char.price} GP per day</div>
+              <div><span style={{fontWeight: "bold"}}>Age:</span> {char.age}</div>
+              <div><span style={{fontWeight: "bold"}}>Gender:</span> {char.gender}</div>
+              <div><span style={{fontWeight: "bold"}}>Height:</span> {char.height}</div>
+              <div><span style={{fontWeight: "bold"}}>Strength:</span> {char.strength}</div>
+              <div><span style={{fontWeight: "bold"}}>Weakness:</span> {char.weakness}</div>
+              <Link to={'/shop'}><button className="back-button">Back to shop</button></Link>
           </div>
         </div>
       </div>
+      
     );
   }
   

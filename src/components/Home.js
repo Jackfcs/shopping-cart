@@ -6,8 +6,8 @@ function Home() {
   
     return (
       <div className="window">
-        <h3 className="title">
-        <Link to={'/shop'}>View available henchmen</Link>
+        <h3 >
+        <Link to={'/shop'}><button className="title">View available henchmen in the shop</button></Link>
             
         </h3>
       </div>

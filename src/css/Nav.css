@@ -2,12 +2,13 @@ nav {
     background-color: rgba(127, 160, 161, 0.9);
     display: flex;
     justify-content: space-around;
-    height: 10vh;
+    
     color: rgb(0, 0, 0);
     align-items: center;
     font-weight: bold;
     font-size: larger;
-
+    min-height: 50px;
+    height: 10vh;
 }
 
 .list {
@@ -23,9 +24,9 @@ nav {
 }
 
 .logo{
-    width: 100px;
+    width: 40px;
     align-self: left;
-    background-color: white;
+    border-radius: 5px;
 }
 
 .home{
@@ -51,6 +52,14 @@ nav {
     color: black;
     bottom: 24px;
     left: 5px;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Papyrus';
 }
 
 

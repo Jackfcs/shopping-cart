@@ -8,19 +8,8 @@ const Cart = (props) => {
   const increaseQty = props.increaseQty;
   const decreaseQty = props.decreaseQty;
 
-  // const deleteItem = (index) => {
-  //   setCart(
-  //     cart.splice[index]
-  //   )
-  // }
 
-  // const deleteItem = (index) => {
-  //   let newCart = cart
-  //   newCart.splice(index, 1)
-  //   setCart(newCart)
-  //   console.log(cart)
-  // }
-
+  
   let itemTotal = 0;
 
   cart.forEach(function (obj) {
@@ -63,15 +52,18 @@ const Cart = (props) => {
           ></img>
           <div className="cart-character-info-container">
             <div className="cart-character-info">
-              <div>Name: {item.name}</div>
-              <div>Class: {item.class}</div>
-              <div>Price: {item.price} GP per day</div>
+              <div><span style={{fontWeight: "bold"}}>Name:</span> {item.name}</div>
+              <div><span style={{fontWeight: "bold"}}>Class:</span> {item.class}</div>
+              <div><span style={{fontWeight: "bold"}}>Price:</span> {item.price} GP per day</div>
               <div className="amend-days">
-                <button className="amend-qty-btn" onClick={() => decreaseQty(index)}>-</button> 
-                <div className="no-of-days">{item.qty}{" "}{days}</div> 
-                <button className="amend-qty-btn" onClick={() => increaseQty(index)}>+</button>
+                <div style={{fontWeight: "bold"}}>Duration:</div> 
+                <div className="button-width">
+                  <button className="amend-qty-btn" onClick={() => decreaseQty(index)}>-</button> 
+                  <div className="num-of-days">{item.qty}{" "}{days}</div> 
+                  <button className="amend-qty-btn" onClick={() => increaseQty(index)}>+</button>
+                </div>
               </div>
-              <div>Total: {total} GP</div>
+              <div><span style={{fontWeight: "bold"}}>Total:</span> {total} GP</div>
               <button onClick={() => deleteItem(index)} className="delete-item">
                 Delete Item
               </button>

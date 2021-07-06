@@ -11,21 +11,15 @@ const Nav = (props) => {
     color: 'white'
   }
 
-  // let cartTotal = 0
-
-  
-
-  // for (let i = 0; i < props.cart.length; i++){
-  //       cartTotal += parseInt(props.cart[i].qty)
-        
-  //     }
 
   return (
     <nav>
       <ul className="list">
         <div className="page-names">
         <Link style={navStyle} to="/">
-          <img className="logo" src="/images/full-logo.png" alt="Logo"></img>
+          <div className="logo-text">
+          <img className="logo" src="/images/logo.png" alt="Logo"></img><span>NPC4HIRE</span>
+          </div>
         </Link>
         
         <Link style={navStyle} to="/">
@@ -35,7 +29,9 @@ const Nav = (props) => {
           <li className="shop">Shop</li>
         </Link>
         <Link style={navStyle} to="/cart">
-          <li className="cart"><FontAwesomeIcon className="cart-icon" icon={faShoppingCart} /> <div className="cart-number">{props.cartItemsQty}</div></li>
+          <li className="cart">
+            <FontAwesomeIcon className="cart-icon" icon={faShoppingCart} /> 
+            <div className="cart-number">{props.cartItemsQty}</div></li>
         </Link>
         </div>
       </ul>

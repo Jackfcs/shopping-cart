@@ -13,6 +13,7 @@
     margin: 10px;    
     height: 85vh;
     overflow: auto;
+    border-radius: 10px;
 }
 
 .order-summary-container{
@@ -47,7 +48,6 @@
 } 
 
 .amend-days{
-    width: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -74,10 +74,12 @@
     align-self: center;
     border: none;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .delete-item:hover {
     cursor: pointer;
+    background-color: rgb(223, 223, 223);
 }
 
 .delete-item:active{
@@ -102,13 +104,7 @@
     font-weight: 100;
 }
 
-.num-of-items{
 
-}
-
-.total-cost{
-
-}
 
 .checkout-button{
     width: 30%;
@@ -139,4 +135,11 @@
 
 .amend-qty-btn:active {
     background-color: grey;
+}
+
+.button-width{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin-left: 5px;
 }
