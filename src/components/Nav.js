@@ -18,7 +18,7 @@ const Nav = (props) => {
         <div className="page-names">
         <Link style={navStyle} to="/">
           <div className="logo-text">
-          <img className="logo" src="/images/logo.png" alt="Logo"></img><span>NPC4HIRE</span>
+          <img className="logo" src="../images/logo.png" alt="Logo"></img><span>NPC4HIRE</span>
           </div>
         </Link>
         
