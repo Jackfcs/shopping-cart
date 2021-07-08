@@ -60,7 +60,7 @@ nav {
     flex-direction: row;
     align-items: center;
     font-size: 30px;
-    /* font-family: 'Papyrus'; */
+    font-family: 'Papyrus';
 }
 
 @media screen and (max-width: 785px) {
